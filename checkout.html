@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="navbar">
+    <h1 class="logo">CustomCrafter</h1>
+  </header>
+
+  <section class="checkout container">
+    <button onclick="window.history.back()" class="back-btn" aria-label="Go back">
+      <span style="font-size:1.2em;vertical-align:middle;">&#8592;</span>
+      <span style="vertical-align:middle;">Back</span>
+    </button>
+    <h3>Checkout</h3>
+    <p>Total Amount: ₹<span id="checkoutTotal">0</span></p>
+    <button id="payBtn" class="btn">Pay Now</button>
+    <div id="paymentStatus"></div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2025 CustomCrafter. All rights reserved.</p>
+  </footer>
+
+  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
