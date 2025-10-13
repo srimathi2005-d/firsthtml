@@ -134,3 +134,16 @@ let city="New York";
 let message=`My name is ${name}, I am ${age} years old and I live in ${city}.`;
 console.log(message); // My name is John, I am 30 years old and I live in New York.
 console.log(`I am ${age}`);
+
+function initMap() {    
+    const location = { lat: -34.397, lng: 150.644 };
+    const map = new google.maps.Map(document.getElementById("map"), {
+        zoom: 8,
+        center: location,
+    });
+    const marker = new google.maps.Marker({
+        position: location,
+        map: map,
+    });
+}
+// The initMap function initializes a Google Map centered at the specified latitude and longitude (lat and lng).
