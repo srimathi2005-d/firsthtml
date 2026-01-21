@@ -15,6 +15,8 @@ mongoose
  
   .catch((err)=>{console.log(err);})
 
+app.use('/auth',require('./routes/authRoutes'));
+
 app.get('/api', (req, res) => {
   res.send('Hello World!');         
 });
