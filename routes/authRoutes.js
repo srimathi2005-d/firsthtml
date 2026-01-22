@@ -7,3 +7,7 @@ router.post('/register',register);
 
 module.exports=router;
 
+const{login}=require('../controllers/authControllers');
+
+router.post('/login',login);  
+

@@ -16,7 +16,7 @@ mongoose
   .catch((err)=>{console.log(err);})
 
 app.use('/auth',require('./routes/authRoutes'));
-
+app.use('/tasks',require('./routes/taskRoutes'));
 app.get('/api', (req, res) => {
   res.send('Hello World!');         
 });
